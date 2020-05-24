@@ -13,6 +13,9 @@
 
     {{!-- Styles'n'Scripts --}}
     <link rel="stylesheet" type="text/css" href="{{asset "built/screen.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/blog.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/hybrid.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/ghost-hunter.css"}}" />
 
     {{!-- This tag outputs SEO meta+structured data and other important settings --}}
     {{ghost_head}}
@@ -33,7 +36,8 @@
                     <a href="{{@site.url}}">Latest Posts</a>
                     {{#if @site.facebook}}<a href="{{facebook_url @site.facebook}}" target="_blank" rel="noopener">Facebook</a>{{/if}}
                     {{#if @site.twitter}}<a href="{{twitter_url @site.twitter}}" target="_blank" rel="noopener">Twitter</a>{{/if}}
-                    <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
+                    <a href="https://www.liplex.de/datenschutz.html" target="_blank">Datenschutz</a>
+                    <a href="https://www.liplex.de/impressum.html" target="_blank">Impressum</a>
                 </nav>
             </div>
         </footer>
@@ -78,6 +82,18 @@
     </div>
     {{/if}}
 
+    {{!-- Ghost hunter setup --}}
+    <section class="ghost-hunter">
+      <h1>Search all posts</h1>
+      <a class="close" href="#"></a>
+      <form>
+        <div class="form-group">
+          <input id="search-field" placeholder="Search" autocomplete="off" />
+        </div>
+      </form>
+      <section id="results"></section>
+    </section>
+
     {{!-- jQuery, required for fitvids --}}
     <script
         src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -86,6 +102,9 @@
     </script>
     {{!-- Fitvids (for responsive video embeds), infinite scroll, floating header, and gallery card support --}}
     <script src="{{asset "built/casper.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/highlight.min.js"}}"></script>
+    <script type="text/javascript" src="{{asset "ghostHunter/dist/jquery.ghosthunter.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/init.js"}}"></script>
 
     {{!-- Scripts for Members subscription --}}
     <script>

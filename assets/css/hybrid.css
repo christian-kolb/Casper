@@ -1,0 +1,166 @@
+/*
+
+vim-hybrid theme by w0ng (https://github.com/w0ng/vim-hybrid)
+
+*/
+
+/*background color*/
+.post-full-content pre code .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #1d1f21;
+  -webkit-text-size-adjust: none;
+}
+
+/*selection color*/
+.post-full-content pre code .hljs::selection,
+.post-full-content pre code .hljs span::selection {
+	background: #373b41;
+}
+.post-full-content pre code .hljs::-moz-selection,
+.post-full-content pre code .hljs span::-moz-selection {
+	background: #373b41;
+}
+
+/*foreground color*/
+.post-full-content pre code .hljs,
+.post-full-content pre code .hljs-setting .hljs-value,
+.post-full-content pre code .hljs-expression .hljs-variable,
+.post-full-content pre code .hljs-expression .hljs-begin-block,
+.post-full-content pre code .hljs-expression .hljs-end-block,
+.post-full-content pre code .hljs-class .hljs-params,
+.post-full-content pre code .hljs-function .hljs-params,
+.post-full-content pre code .hljs-at_rule .hljs-preprocessor {
+  color: #c5c8c6;
+}
+
+/*color: fg_yellow*/
+.post-full-content pre code .hljs-title,
+.post-full-content pre code .hljs-function .hljs-title,
+.post-full-content pre code .hljs-keyword .hljs-common,
+.post-full-content pre code .hljs-class .hljs-title,
+.post-full-content pre code .hljs-decorator,
+.post-full-content pre code .hljs-tag .hljs-title,
+.post-full-content pre code .hljs-header,
+.post-full-content pre code .hljs-sub,
+.post-full-content pre code .hljs-function {
+  color: #f0c674;
+}
+
+/*color: fg_comment*/
+.post-full-content pre code .hljs-comment,
+.post-full-content pre code .hljs-javadoc,
+.post-full-content pre code .hljs-output .hljs-value,
+.post-full-content pre code .hljs-pi,
+.post-full-content pre code .hljs-shebang,
+.post-full-content pre code .hljs-doctype {
+  color: #707880;
+}
+
+/*color: fg_red*/
+.post-full-content pre code .hljs-number,
+.post-full-content pre code .hljs-symbol,
+.post-full-content pre code .hljs-literal,
+.post-full-content pre code .hljs-deletion,
+.post-full-content pre code .hljs-link_url,
+.post-full-content pre code .hljs-symbol .hljs-string,
+.post-full-content pre code .hljs-argument,
+.post-full-content pre code .hljs-hexcolor,
+.post-full-content pre code .hljs-input .hljs-prompt,
+.post-full-content pre code .hljs-char {
+ color: #cc6666
+}
+
+/*color: fg_green*/
+.post-full-content pre code .hljs-string,
+.post-full-content pre code .hljs-special,
+.post-full-content pre code .hljs-javadoctag,
+.post-full-content pre code .hljs-addition,
+.post-full-content pre code .hljs-important,
+.post-full-content pre code .hljs-tag .hljs-value,
+.post-full-content pre code .hljs-at.rule .hljs-keyword,
+.post-full-content pre code .hljs-regexp,
+.post-full-content pre code .hljs-attr_selector {
+  color: #b5bd68;
+}
+
+/*color: fg_purple*/
+.post-full-content pre code .hljs-variable,
+.post-full-content pre code .hljs-property,
+.post-full-content pre code .hljs-envar,
+.post-full-content pre code .hljs-code,
+.post-full-content pre code .hljs-expression,
+.post-full-content pre code .hljs-localvars,
+.post-full-content pre code .hljs-id,
+.post-full-content pre code .hljs-variable .hljs-filter,
+.post-full-content pre code .hljs-variable .hljs-filter .hljs-keyword,
+.post-full-content pre code .hljs-template_tag .hljs-filter .hljs-keyword {
+ color: #b294bb;
+}
+
+/*color: fg_blue*/
+.post-full-content pre code .hljs-statement,
+.post-full-content pre code .hljs-label,
+.post-full-content pre code .hljs-keyword,
+.post-full-content pre code .hljs-xmlDocTag,
+.post-full-content pre code .hljs-function .hljs-keyword,
+.post-full-content pre code .hljs-chunk,
+.post-full-content pre code .hljs-cdata,
+.post-full-content pre code .hljs-link_label,
+.post-full-content pre code .hljs-bullet,
+.post-full-content pre code .hljs-class .hljs-keyword,
+.post-full-content pre code .hljs-smartquote,
+.post-full-content pre code .hljs-method,
+.post-full-content pre code .hljs-list .hljs-title,
+.post-full-content pre code .hljs-tag {
+ color: #81a2be;
+}
+
+/*color: fg_aqua*/
+.post-full-content pre code .hljs-pseudo,
+.post-full-content pre code .hljs-exception,
+.post-full-content pre code .hljs-annotation,
+.post-full-content pre code .hljs-subst,
+.post-full-content pre code .hljs-change,
+.post-full-content pre code .hljs-cbracket,
+.post-full-content pre code .hljs-operator,
+.post-full-content pre code .hljs-horizontal_rule,
+.post-full-content pre code .hljs-preprocessor .hljs-keyword,
+.post-full-content pre code .hljs-typedef,
+.post-full-content pre code .hljs-template_tag,
+.post-full-content pre code .hljs-variable,
+.post-full-content pre code .hljs-variable .hljs-filter .hljs-argument,
+.post-full-content pre code .hljs-at_rule,
+.post-full-content pre code .hljs-at_rule .hljs-string,
+.post-full-content pre code .hljs-at_rule .hljs-keyword {
+  color: #8abeb7;
+}
+
+
+/*color: fg_orange*/
+.post-full-content pre code .hljs-type,
+.post-full-content pre code .hljs-typename,
+.post-full-content pre code .hljs-inheritance .hljs-parent,
+.post-full-content pre code .hljs-constant,
+.post-full-content pre code .hljs-built_in,
+.post-full-content pre code .hljs-setting,
+.post-full-content pre code .hljs-structure,
+.post-full-content pre code .hljs-link_reference,
+.post-full-content pre code .hljs-attribute,
+.post-full-content pre code .hljs-blockquote,
+.post-full-content pre code .hljs-quoted,
+.post-full-content pre code .hljs-class,
+.post-full-content pre code .hljs-header {
+  color: #de935f;
+}
+
+.post-full-content pre code .hljs-emphasis
+{
+  font-style: italic;
+}
+
+.post-full-content pre code .hljs-strong
+{
+  font-weight: bold;
+}

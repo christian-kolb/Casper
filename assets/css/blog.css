@@ -1,0 +1,6 @@
+.hljs::selection {
+    background: #efefef !important;
+}
+.cc_banner-wrapper .cc_container {
+	font-family: "Merriweather", serif;
+}
